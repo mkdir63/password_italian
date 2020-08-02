@@ -90,7 +90,6 @@ def easy_pass():
         else:
             break
 
-    #word_url = "http://svnweb.freebsd.org/csrg/share/dict/words?view=co&content-type=text/plain"    # simply a url
     word_url = "https://raw.githubusercontent.com/napolux/paroleitaliane/master/paroleitaliane/60000_parole_italiane.txt"  # simply a url
     response = urllib.request.urlopen(word_url)             # opens the url: it is HTTP Response type
     long_txt = response.read().decode()                     # string: it is of the type 'a\nAAA\nAAAS\n...'
